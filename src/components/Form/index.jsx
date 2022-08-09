@@ -5,16 +5,16 @@ import * as C from './styled'
 
 export const Form = (props) => {
 
-    const [name, setName] = useState('')
+    const [nome, setName] = useState('')
     const [number, setNumber] = useState('')
     const [error, setError]= useState(false)
 
     const handleChange = (e) => {
         e.preventDefault()
 
-        console.log(name)
+        console.log(nome)
         
-        if(name.length < 4) {
+        if(nome.length < 4) {
             setError(true)
         }else {
             setError(false)
@@ -23,14 +23,14 @@ export const Form = (props) => {
             setName('')
 
             props.List({
-                name,
+                nome,
                 number
             })
 
         }
     }
 
-    console.log(name, number)
+    console.log(nome, number)
 
     return (
         <C.Form onSubmit={handleChange}>
@@ -38,7 +38,7 @@ export const Form = (props) => {
 
             <Input
                 type='text'
-                value={name}
+                value={nome}
                 Change={(e) => setName(e)}
                 placeholder='Digite...'
                 id='name'
