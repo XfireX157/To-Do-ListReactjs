@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Form = styled.form`
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
 `
 
 export const Legend = styled.legend`
