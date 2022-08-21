@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useState } from 'react'
 import { Button } from '../Button'
 import { Input } from '../Input'
@@ -8,6 +9,11 @@ export const Form = (props) => {
     const [nome, setName] = useState('')
     const [number, setNumber] = useState('')
     const [error, setError]= useState(false)
+
+    useEffect(() => {
+        setName(props.inputs.nome)
+        setNumber(props.inputs.number)
+    }, [props.inputs])
 
     const handleChange = (e) => {
         e.preventDefault()

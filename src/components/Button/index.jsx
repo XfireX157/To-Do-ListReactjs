@@ -7,7 +7,7 @@ export const Button = (props) => {
             backgroundColor={props.backgroundColor}
             backgroundHover={props.backgroundHover}
             color={props.color}
-            onClick={(e) => props.Click()}
+            onClick={props.Clicks}
         >{props.children}</C.Button>
     )
 }

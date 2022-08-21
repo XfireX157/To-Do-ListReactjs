@@ -8,8 +8,8 @@ export const List = (props) => {
                     <h3>{props.number}</h3>
                 </C.Box>
                 <C.BoxButton>
-                    <C.Btn onClick={() => props.Click({nome: props.nome, number: props.number})} color={props.colorBtn}>{props.iconPrimary}</C.Btn>
-                    <C.Btn color={props.colorBtn}> {props.iconSecond} </C.Btn>
+                    <C.Btn onClick={() => props.Click()} color={props.colorBtn}>{props.iconPrimary}</C.Btn>
+                    <C.Btn onClick={props.Clickse} color={props.colorBtn}> {props.iconSecond} </C.Btn>
                 </C.BoxButton>
             </C.ListLi>
     )
