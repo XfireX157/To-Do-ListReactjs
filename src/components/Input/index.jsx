@@ -3,7 +3,7 @@ import * as C from  './styled'
 export const Input = (props) => {
     return(
         <C.Box>
-            <C.Icon>{props.icon}</C.Icon>
+           
             <C.Input 
                 type={props.type}
                 value={props.value}
@@ -15,6 +15,7 @@ export const Input = (props) => {
                 backgroundInput={props.backgroundInput}
                 colorPlaceHold={props.colorPlaceHold}
             />
+            <C.Icon>{props.icon}</C.Icon>
         </C.Box>
     )
 }

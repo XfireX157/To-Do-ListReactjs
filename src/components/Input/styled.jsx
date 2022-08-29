@@ -4,6 +4,9 @@ export const Box = styled.div`
     width: 100%;
     height: auto;
     margin: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 `
 
 export const Icon = styled.span`
@@ -22,6 +25,7 @@ export const Input = styled.input`
     padding: 22px 8px;
     color: ${(props) => props.colorInput};
     background-color: ${(props) => props.backgroundInput};
+    outline: none;
 
     &::placeholder{
         color: ${(props) => props.colorPlaceHold};

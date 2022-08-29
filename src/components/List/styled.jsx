@@ -10,6 +10,12 @@ export const ListLi = styled.li`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
+
+    ${({active}) => active ?`
+        background: blue;
+    `: `
+    `}
 `
 
 export const Box = styled.div`
@@ -18,6 +24,8 @@ export const Box = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
+    
 `
 
 export const BoxButton = styled.div`

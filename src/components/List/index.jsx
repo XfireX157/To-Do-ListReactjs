@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import * as C from './styled'
 
 export const List = (props) => {
-    return (
-            <C.ListLi key={props.nome} background={props.background} color={props.color}>
+    const [isActive, setIsActive] = useState(false)
+
+    return ( 
+            <C.ListLi
+            active={isActive ? true : false }
+            onClick={() => setIsActive(!isActive)}
+                key={props.nome} 
+                background={props.background} 
+                color={props.color}>
                 <C.Box>
                     <h2>{props.nome}</h2>
                     <h3>{props.number}</h3>
